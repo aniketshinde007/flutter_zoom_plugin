@@ -16,19 +16,19 @@ class StartMeetingWidget extends StatelessWidget {
   StartMeetingWidget({Key key, meetingId}) : super(key: key) {
     this.zoomOptions = new ZoomOptions(
       domain: "zoom.us",
-      appKey: "appKey",
-      appSecret: "appSecret",
+      appKey: "Q9XJuMkc2cPGD1Dg87rXhpTfRSausN6gntOj", // Replace with with key got from the Zoom Marketplace
+      appSecret: "mOmVNLaMAnsluNqBNYLbFI4IvyW0NxlEl4Yz", // Replace with with secret got from the Zoom Marketplace
     );
     this.meetingOptions = new ZoomMeetingOptions(
-        userId: '<zoom_user_id>',
-        displayName: 'Example display Name',
+        userId: 'me',
+        displayName: 'Aniket',
         meetingId: meetingId,
-        zoomAccessToken: "<User zak>",
+        zoomAccessToken: "eyJ6bV9za20iOiJ6bV9vMm0iLCJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJjbGllbnRzbSIsInVpZCI6IkkxN19USERxUU5xVl92VlM5azdqTWciLCJpc3MiOiJ3ZWIiLCJzdHkiOjEwMCwid2NkIjoidXMwMiIsImNsdCI6MCwic3RrIjoiNmNqc1Z5UHhwZ2lEdHRzcEExeVZWSEtNdFFDajZ3V0liRXJpY3djWEU0OC5CZ1lzVm1WclpUTkxWV294VVhoVldqSlJhbGRzTUVseE9FdzBja2s1UTBGWFMyMXFabmR6TVZaUVNtVkRTVDFBWWpSak1HUXlPVEpoWkRFMlpXWXdORFptTW1aaE16ZzRaREV4WkRoaU5XWTVZMlUxTlRSak9EaGpPRGxsTVdJd1lqa3lOVGd3WW1Wak9HVXdNREV3TkFBTU0wTkNRWFZ2YVZsVE0zTTlBQVIxY3pBeUFBQUJlZXZaMVg0QUVuVUFBQUEiLCJleHAiOjE2MjMxNjY3OTIsImlhdCI6MTYyMzE1OTU5MiwiYWlkIjoiRTZMS3h1bmNUajZtX1JBcG9tSFBfUSIsImNpZCI6IiJ9.9ofpzm8ps5wvU7dvD23lxIs5DrkbOufz4enTF5QaaDc",
         zoomToken: "<user_token>",
         disableDialIn: "true",
         disableDrive: "true",
         disableInvite: "true",
-        disableShare: "true",
+        disableShare: "false",
         noAudio: "false",
         noDisconnectAudio: "false"
     );

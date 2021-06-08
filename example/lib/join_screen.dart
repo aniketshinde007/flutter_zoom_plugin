@@ -88,7 +88,7 @@ class _JoinWidgetState extends State<JoinWidget> {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) {
-          return MeetingWidget(meetingId: meetingIdController.text, meetingPassword: meetingPasswordController.text);
+          return MeetingWidget(meetingId: '89124470719', meetingPassword: '791401');
         },
       ),
     );
@@ -98,7 +98,7 @@ class _JoinWidgetState extends State<JoinWidget> {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) {
-          return StartMeetingWidget(meetingId: meetingIdController.text);
+          return StartMeetingWidget(meetingId: '89124470719');
         },
       ),
     );

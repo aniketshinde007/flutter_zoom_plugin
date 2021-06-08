@@ -7,6 +7,10 @@ import 'package:flutter_zoom_plugin/zoom_options.dart';
 
 typedef void ZoomViewCreatedCallback(ZoomViewController controller);
 
+someFunc(){
+  print('helloo');
+}
+
 class ZoomView extends StatefulWidget {
   const ZoomView({
     Key key,
@@ -104,6 +108,10 @@ class ZoomViewController {
     optionMap.putIfAbsent("disableShare", () => options.disableShare);
     optionMap.putIfAbsent("noDisconnectAudio", () => options.noDisconnectAudio);
     optionMap.putIfAbsent("noAudio", () => options.noAudio);
+    optionMap.putIfAbsent("noTitlebar", () => options.noTitlebar);
+    optionMap.putIfAbsent("noTextPassword", () => options.meetingViewsOptions.noTextPassword);
+    optionMap.putIfAbsent("noTextMeetingId", () => options.meetingViewsOptions.noTextMeetingId);
+    optionMap.putIfAbsent("noButtonParticipants", () => options.meetingViewsOptions.noButtonParticipants);
 
     return _methodChannel.invokeMethod('join', optionMap);
   }
