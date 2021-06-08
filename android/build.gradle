@@ -1,4 +1,4 @@
-group 'com.decodedhealth.flutter_zoom_plugin'
+group 'com.anishi7.flutter_zoom_plugin'
 version '1.0-SNAPSHOT'
 
 buildscript {

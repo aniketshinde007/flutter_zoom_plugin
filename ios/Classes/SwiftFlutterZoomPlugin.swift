@@ -181,9 +181,9 @@ public class ZoomView: NSObject, FlutterPlatformView, MobileRTCMeetingServiceDel
     init(_ frame: CGRect, viewId: Int64, messenger: (NSObjectProtocol & FlutterBinaryMessenger)?, args: Any?) {
         self.frame = frame
         self.viewId = viewId
-        self.channel = FlutterMethodChannel(name: "com.decodedhealth/flutter_zoom_plugin", binaryMessenger: messenger!)
+        self.channel = FlutterMethodChannel(name: "com.anishi7/flutter_zoom_plugin", binaryMessenger: messenger!)
         self.authenticationDelegate = AuthenticationDelegate()
-        self.statusEventChannel = FlutterEventChannel(name: "com.decodedhealth/zoom_event_stream", binaryMessenger: messenger!)
+        self.statusEventChannel = FlutterEventChannel(name: "com.anishi7/zoom_event_stream", binaryMessenger: messenger!)
 
         super.init()
         
